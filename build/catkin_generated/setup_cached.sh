@@ -9,6 +9,7 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/artem/ros_workspace/devel:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH="/home/artem/ros_workspace/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/artem/ros_workspace/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/artem/ros_workspace/build'
 export ROSLISP_PACKAGE_DIRECTORIES='/home/artem/ros_workspace/devel/share/common-lisp'
 export ROS_PACKAGE_PATH="/home/artem/ros_workspace/src:$ROS_PACKAGE_PATH"
