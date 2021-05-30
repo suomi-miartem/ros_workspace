@@ -1,0 +1,8 @@
+prefix=/home/artem/ros_workspace/devel
+
+Name: ros_package3
+Description: Description of ros_package3
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
