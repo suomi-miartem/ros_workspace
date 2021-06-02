@@ -1,2 +1,2 @@
-ros_package12:ros_package3
+ros_package12:ros_package3:ros_package4
 -DCATKIN_DEVEL_PREFIX=/home/artem/ros_workspace/devel -DCMAKE_INSTALL_PREFIX=/home/artem/ros_workspace/install -G Unix Makefiles

@@ -1,0 +1,8 @@
+prefix=/home/artem/ros_workspace/devel
+
+Name: ros_package4
+Description: Description of ros_package4
+Version: 0.0.0
+Cflags: -I/home/artem/ros_workspace/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

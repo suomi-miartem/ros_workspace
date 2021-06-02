@@ -25,7 +25,7 @@ class ExTf():
     def func_tf_pub(self):
         self.current_time = rospy.Time.now()
         odom_quat = tf.transformations.quaternion_from_euler(0, 0, self.th)
-        self.odom_broadcaster.sendTransform((self.x, self.y, 0), 
+        self.odom_broadcaster.sendTransform((self.x, self.y, 0.), 
                                             odom_quat, self.current_time,
                                             "base_link","odom")
 
@@ -33,7 +33,7 @@ class ExTf():
         self.odom_broadcaster_laser.sendTransform((0, 0, self.len_laser), 
                                                     odom_quat1, self.current_time, 
                                                     "laser","base_link")
-        #self.x +=0.01
+        self.x +=0.01
         self.r.sleep()
     
     def func_tf_sub(self):
@@ -53,6 +53,7 @@ def main():
     while not rospy.is_shutdown():
         try:
             example1.func_tf_pub()
+            example1.func_tf_sub()
             if stored_exception:
                 print('game over')
                 break

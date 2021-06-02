@@ -133,6 +133,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/artem/ros_workspace/build/gtest/cmake_install.cmake")
   include("/home/artem/ros_workspace/build/ros_package12/cmake_install.cmake")
   include("/home/artem/ros_workspace/build/ros_package3/cmake_install.cmake")
+  include("/home/artem/ros_workspace/build/ros_package4/cmake_install.cmake")
 
 endif()
 

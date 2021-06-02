@@ -476,6 +476,12 @@ ros_package3_BINARY_DIR:STATIC=/home/artem/ros_workspace/build/ros_package3
 //Value Computed by CMake
 ros_package3_SOURCE_DIR:STATIC=/home/artem/ros_workspace/src/ros_package3
 
+//Value Computed by CMake
+ros_package4_BINARY_DIR:STATIC=/home/artem/ros_workspace/build/ros_package4
+
+//Value Computed by CMake
+ros_package4_SOURCE_DIR:STATIC=/home/artem/ros_workspace/src/ros_package4
+
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/noetic/share/rosconsole/cmake
 
@@ -651,7 +657,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

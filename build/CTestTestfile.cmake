@@ -7,3 +7,4 @@
 subdirs("gtest")
 subdirs("ros_package12")
 subdirs("ros_package3")
+subdirs("ros_package4")
