@@ -74,3 +74,8 @@ catkin_install_python(PROGRAMS
   scripts/client.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
+
+install(FILES
+  launch/start.launch
+  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+)

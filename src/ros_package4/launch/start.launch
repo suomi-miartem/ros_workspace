@@ -1,0 +1,3 @@
+<launch>
+    <node name="server" pkg="ros_package4" type="server.py" />
+</launch>

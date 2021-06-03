@@ -1,0 +1,8 @@
+prefix=/home/artem/ros_workspace/install
+
+Name: ros_package12
+Description: Description of ros_package12
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -102,6 +102,17 @@ install/strip/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -123,17 +134,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -228,21 +228,6 @@ ros_package3_generate_messages_py/fast:
 .PHONY : ros_package3_generate_messages_py/fast
 
 # Convenience name for target.
-ros_package3/CMakeFiles/ros_package3_gencpp.dir/rule:
-	cd /home/artem/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 ros_package3/CMakeFiles/ros_package3_gencpp.dir/rule
-.PHONY : ros_package3/CMakeFiles/ros_package3_gencpp.dir/rule
-
-# Convenience name for target.
-ros_package3_gencpp: ros_package3/CMakeFiles/ros_package3_gencpp.dir/rule
-
-.PHONY : ros_package3_gencpp
-
-# fast build rule for target.
-ros_package3_gencpp/fast:
-	cd /home/artem/ros_workspace/build && $(MAKE) -f ros_package3/CMakeFiles/ros_package3_gencpp.dir/build.make ros_package3/CMakeFiles/ros_package3_gencpp.dir/build
-.PHONY : ros_package3_gencpp/fast
-
-# Convenience name for target.
 ros_package3/CMakeFiles/ros_package3_generate_messages_eus.dir/rule:
 	cd /home/artem/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 ros_package3/CMakeFiles/ros_package3_generate_messages_eus.dir/rule
 .PHONY : ros_package3/CMakeFiles/ros_package3_generate_messages_eus.dir/rule
@@ -303,21 +288,6 @@ ros_package3_gennodejs/fast:
 .PHONY : ros_package3_gennodejs/fast
 
 # Convenience name for target.
-ros_package3/CMakeFiles/_catkin_empty_exported_target.dir/rule:
-	cd /home/artem/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 ros_package3/CMakeFiles/_catkin_empty_exported_target.dir/rule
-.PHONY : ros_package3/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-# Convenience name for target.
-_catkin_empty_exported_target: ros_package3/CMakeFiles/_catkin_empty_exported_target.dir/rule
-
-.PHONY : _catkin_empty_exported_target
-
-# fast build rule for target.
-_catkin_empty_exported_target/fast:
-	cd /home/artem/ros_workspace/build && $(MAKE) -f ros_package3/CMakeFiles/_catkin_empty_exported_target.dir/build.make ros_package3/CMakeFiles/_catkin_empty_exported_target.dir/build
-.PHONY : _catkin_empty_exported_target/fast
-
-# Convenience name for target.
 ros_package3/CMakeFiles/ros_package3_genlisp.dir/rule:
 	cd /home/artem/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 ros_package3/CMakeFiles/ros_package3_genlisp.dir/rule
 .PHONY : ros_package3/CMakeFiles/ros_package3_genlisp.dir/rule
@@ -347,6 +317,21 @@ ros_package3_genpy/fast:
 	cd /home/artem/ros_workspace/build && $(MAKE) -f ros_package3/CMakeFiles/ros_package3_genpy.dir/build.make ros_package3/CMakeFiles/ros_package3_genpy.dir/build
 .PHONY : ros_package3_genpy/fast
 
+# Convenience name for target.
+ros_package3/CMakeFiles/ros_package3_gencpp.dir/rule:
+	cd /home/artem/ros_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 ros_package3/CMakeFiles/ros_package3_gencpp.dir/rule
+.PHONY : ros_package3/CMakeFiles/ros_package3_gencpp.dir/rule
+
+# Convenience name for target.
+ros_package3_gencpp: ros_package3/CMakeFiles/ros_package3_gencpp.dir/rule
+
+.PHONY : ros_package3_gencpp
+
+# fast build rule for target.
+ros_package3_gencpp/fast:
+	cd /home/artem/ros_workspace/build && $(MAKE) -f ros_package3/CMakeFiles/ros_package3_gencpp.dir/build.make ros_package3/CMakeFiles/ros_package3_gencpp.dir/build
+.PHONY : ros_package3_gencpp/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -361,17 +346,16 @@ help:
 	@echo "... ros_package3_generate_messages_cpp"
 	@echo "... ros_package3_generate_messages_nodejs"
 	@echo "... ros_package3_generate_messages_py"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... ros_package3_gencpp"
 	@echo "... ros_package3_generate_messages_eus"
 	@echo "... ros_package3_geneus"
 	@echo "... ros_package3_generate_messages_lisp"
 	@echo "... ros_package3_gennodejs"
-	@echo "... _catkin_empty_exported_target"
 	@echo "... ros_package3_genlisp"
 	@echo "... ros_package3_genpy"
 	@echo "... test"
+	@echo "... rebuild_cache"
+	@echo "... ros_package3_gencpp"
+	@echo "... edit_cache"
 .PHONY : help
 
 

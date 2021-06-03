@@ -100,3 +100,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ros_package4" TYPE PROGRAM FILES "/home/artem/ros_workspace/build/ros_package4/catkin_generated/installspace/client.py")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_package4" TYPE FILE FILES "/home/artem/ros_workspace/src/ros_package4/launch/start.launch")
+endif()
+
