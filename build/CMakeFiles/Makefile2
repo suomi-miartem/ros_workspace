@@ -68,6 +68,7 @@ all: rosserial/rosserial_client/all
 all: ros_package12/all
 all: ros_package3/all
 all: ros_package4/all
+all: ros_package5/all
 all: rosserial/rosserial_server/all
 all: rosserial/rosserial_embeddedlinux/all
 all: rosserial/rosserial_test/all
@@ -91,6 +92,7 @@ preinstall: rosserial/rosserial_client/preinstall
 preinstall: ros_package12/preinstall
 preinstall: ros_package3/preinstall
 preinstall: ros_package4/preinstall
+preinstall: ros_package5/preinstall
 preinstall: rosserial/rosserial_server/preinstall
 preinstall: rosserial/rosserial_embeddedlinux/preinstall
 preinstall: rosserial/rosserial_test/preinstall
@@ -119,6 +121,7 @@ clean: rosserial/rosserial_client/clean
 clean: ros_package12/clean
 clean: ros_package3/clean
 clean: ros_package4/clean
+clean: ros_package5/clean
 clean: rosserial/rosserial_server/clean
 clean: rosserial/rosserial_embeddedlinux/clean
 clean: rosserial/rosserial_test/clean
@@ -272,6 +275,24 @@ ros_package4/clean: ros_package4/CMakeFiles/ros_package4_geneus.dir/clean
 ros_package4/clean: ros_package4/CMakeFiles/ros_package4_genpy.dir/clean
 
 .PHONY : ros_package4/clean
+
+#=============================================================================
+# Directory level rules for directory ros_package5
+
+# Recursive "all" directory target.
+ros_package5/all:
+
+.PHONY : ros_package5/all
+
+# Recursive "preinstall" directory target.
+ros_package5/preinstall:
+
+.PHONY : ros_package5/preinstall
+
+# Recursive "clean" directory target.
+ros_package5/clean:
+
+.PHONY : ros_package5/clean
 
 #=============================================================================
 # Directory level rules for directory rosserial/rosserial

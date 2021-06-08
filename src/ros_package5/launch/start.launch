@@ -1,0 +1,3 @@
+<launch>
+    <node name="rosserial" pkg="rosserial_arduino" type="serial_node.py"/>
+</launch>

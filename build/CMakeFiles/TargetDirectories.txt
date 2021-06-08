@@ -227,6 +227,13 @@
 /home/artem/ros_workspace/build/ros_package4/CMakeFiles/ros_package4_generate_messages.dir
 /home/artem/ros_workspace/build/ros_package4/CMakeFiles/ros_package4_geneus.dir
 /home/artem/ros_workspace/build/ros_package4/CMakeFiles/ros_package4_genpy.dir
+/home/artem/ros_workspace/build/ros_package5/CMakeFiles/install/strip.dir
+/home/artem/ros_workspace/build/ros_package5/CMakeFiles/install/local.dir
+/home/artem/ros_workspace/build/ros_package5/CMakeFiles/install.dir
+/home/artem/ros_workspace/build/ros_package5/CMakeFiles/list_install_components.dir
+/home/artem/ros_workspace/build/ros_package5/CMakeFiles/rebuild_cache.dir
+/home/artem/ros_workspace/build/ros_package5/CMakeFiles/edit_cache.dir
+/home/artem/ros_workspace/build/ros_package5/CMakeFiles/test.dir
 /home/artem/ros_workspace/build/rosserial/rosserial_server/CMakeFiles/install/strip.dir
 /home/artem/ros_workspace/build/rosserial/rosserial_server/CMakeFiles/install/local.dir
 /home/artem/ros_workspace/build/rosserial/rosserial_server/CMakeFiles/install.dir

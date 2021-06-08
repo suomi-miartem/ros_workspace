@@ -1,0 +1,8 @@
+prefix=/home/artem/ros_workspace/install
+
+Name: ros_package5
+Description: Description of ros_package5
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
